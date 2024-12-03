@@ -54,7 +54,7 @@ def get_single_member(id):
 @app.route('/member', methods=['POST'])
 def create_member():
     member = request.json
-    print("added", member)git add
+    print("added", member)
     jackson_family.add_member(member)
    
     return member, 200
